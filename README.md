@@ -10,7 +10,9 @@ $ pip3 install -r requirements.txt   // Install required packages
 ```
 
 ## Running the program
-.......
+```
+$ python3 cook.py
+```
 
 ## Other Code Sources
 For the database of recipe keywords, part of the DB was gathered from this former project (this was mainly to save time with typing): https://github.com/rojaswestall/cs337/blob/master/project2/kb.json
