@@ -4,6 +4,9 @@ import requests
 import nltk
 from bs4 import BeautifulSoup
 
+from ingredient_transform import measurements, Ingredient, print_ingredient
+from utils import string_frac_to_fraction
+
 def parse_recipe(url) -> dict: 
     recipe_items = {}
     #Allows us to imitate a real request more smoothly so rq is not blocked
@@ -22,14 +25,53 @@ def parse_recipe(url) -> dict:
 
     #ingredients
     ingredient_objects = soup.find_all("span", class_="ingredients-item-name")
-    ingredients = [ingredient.getText() for ingredient in ingredient_objects]
+    ingredients_text = [ingredient.getText() for ingredient in ingredient_objects]
+    
+    #{name: "", quantity value: "", "quantity type: "", prep: ""}
+    
+
+    ingredients = []
+    for ingredient_text in ingredients_text:
+        #init values
+        measurement = ""
+        amount = ""
+        modifier = ""
+        name = ""
+
+        #check for an extra special ingrdient modifier (i.e. 1 tsp butter, melted)
+        comma_split = ingredient_text.split(", ")
+        if len(comma_split) > 1:
+            modifier = comma_split[1]
+
+        ingredient_words = comma_split[0].split(' ')
+        for i, word in enumerate(ingredient_words):
+            if word in measurements:
+                measurement = word
+                amount = ' '.join(ingredient_words[0:i]).replace("\u2009", "")
+                amount = string_frac_to_fraction(amount)
+
+                name = ' '.join(ingredient_words[i+1:])
+
+                ingredients.append( Ingredient(name, amount, measurement, modifier) )
+                break 
+        
+        #If no measurement words are found and loop doesn't break, send an error
+        else: 
+            print("No measurement found for ingredient: " + ingredient_text)
+
+
+        
+
     recipe_items["ingredients"] = ingredients
+
+
 
     #instructions
     instructions_section = soup.find("ul", class_="instructions-section")
     instructions_objects = instructions_section.find_all("p")
     instructions_text = [instruct.getText() for instruct in instructions_objects]
     recipe_items["instructions"] = instructions_text
+
 
 
     #info items
@@ -46,7 +88,6 @@ def parse_recipe(url) -> dict:
 
 #Content to Look at for Transformations
 #https://www.allrecipes.com/article/common-ingredient-substitutions/
-#https://github.com/amitadate/EECS-337-NLP-Project-02/blob/master/Final_Submission/transformation_list.py?fbclid=IwAR3kkLEU2g6rs-h6_ujLkpmh6vL4znWXgO-zsUU8BTeoz2ypWNQlMchiRFM
 #https://github.com/rojaswestall/cs337/blob/master/project2/kb.json
 
 #print an ouput of the new recipe
@@ -54,8 +95,12 @@ def print_recipe(recipe_items):
     print("\n-------------")
     print("Recipe: " + recipe_items["title"])
     print("Ingredients: ")
-    for i in recipe_items["ingredients"]:
-        print(i + "\n") #TODO: strip the whitespace from the original so no double return 
+    print("") 
+
+    for ingredient in recipe_items["ingredients"]:
+        print_ingredient(ingredient)
+    
+    print("") 
 
     print("Steps: ")
     for i, instruction in enumerate(recipe_items["instructions"]): 
