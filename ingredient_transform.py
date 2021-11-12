@@ -1,22 +1,16 @@
+
 #Ingredient Transformations
 #https://github.com/amitadate/EECS-337-NLP-Project-02/blob/master/Final_Submission/transformation_list.py?fbclid=IwAR3kkLEU2g6rs-h6_ujLkpmh6vL4znWXgO-zsUU8BTeoz2ypWNQlMchiRFM
 
-
-class Ingredient:
-    def __init__(self, name, amount, measurement, modifier):
-        self.name = name
-        self.amount = amount
-        self.measurement = measurement
-        self.modifier = modifier
-
-def print_ingredient(i: Ingredient):
-    if i.modifier:
-        print( str(i.amount) + " " + i.measurement + " " + i.name + ", " + i.modifier)
-    else: 
-        print( str(i.amount) + " " + i.measurement + " " + i.name)
-
-
 measurements = [
+    #Vague
+    "dollop",
+    "dash",
+    "sprinkle",
+    "pinch",
+    "smidgen",
+    "drop",
+    
     #Volume
     "teaspoon",
     "teaspoons",

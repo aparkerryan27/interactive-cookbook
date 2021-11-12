@@ -3,12 +3,13 @@
 import requests
 import nltk
 from bs4 import BeautifulSoup
+import re #regex expressions
 
-from ingredient_transform import measurements, Ingredient, print_ingredient
-from utils import string_frac_to_fraction
+from ingredient_transform import measurements
+from utils import string_frac_to_fraction, Ingredient, Recipe
 
-def parse_recipe(url) -> dict: 
-    recipe_items = {}
+def parse_recipe(url) -> Recipe: 
+
     #Allows us to imitate a real request more smoothly so rq is not blocked
     headers = {
         'Access-Control-Allow-Origin': '*',
@@ -23,14 +24,10 @@ def parse_recipe(url) -> dict:
     #print(soup.prettify())
 
 
-    #ingredients
+    #Ingredients
+    ingredients = []
     ingredient_objects = soup.find_all("span", class_="ingredients-item-name")
     ingredients_text = [ingredient.getText() for ingredient in ingredient_objects]
-    
-    #{name: "", quantity value: "", "quantity type: "", prep: ""}
-    
-
-    ingredients = []
     for ingredient_text in ingredients_text:
         #init values
         measurement = ""
@@ -38,7 +35,9 @@ def parse_recipe(url) -> dict:
         modifier = ""
         name = ""
 
-        #check for an extra special ingrdient modifier (i.e. 1 tsp butter, melted)
+        #TODO: this will not properly parse "bone-in, skin-on chicken thighs"
+
+        #check for an extra special ingrdient modifier (i.e. 1 tsp butter, melted)  
         comma_split = ingredient_text.split(", ")
         if len(comma_split) > 1:
             modifier = comma_split[1]
@@ -57,53 +56,45 @@ def parse_recipe(url) -> dict:
         
         #If no measurement words are found and loop doesn't break, send an error
         else: 
-            print("No measurement found for ingredient: " + ingredient_text)
+            amount = string_frac_to_fraction(ingredient_words[0].replace("\u2009", ""))
+            name = ' '.join(ingredient_words[1:])
+
+            measurement = "" #no quantifier, direct number of objects required
+            ingredients.append(Ingredient(name, amount, measurement, modifier) )
 
 
-        
 
-    recipe_items["ingredients"] = ingredients
-
-
-
-    #instructions
+    #Instructions
     instructions_section = soup.find("ul", class_="instructions-section")
     instructions_objects = instructions_section.find_all("p")
     instructions_text = [instruct.getText() for instruct in instructions_objects]
-    recipe_items["instructions"] = instructions_text
+
+    
+    #NOTE: NLTK POS tagger did not work well with the type of command sentences 
+
+    #TODO: verb does not start a sentence in this instance -> "An instant-read thermometer inserted into the thickest part of the thigh should read xxx degrees"
+    #TODO: HOW do we get the most significant cooking method out of these?
+        #tried to see if the cooking action with the longest duration would be relevant but it is a bad indicator
+        #
+    #Get the verbs (cooking methods) out of all sentences
+    cooking_verbs = []
+    for instruction in instructions_text:
+        sentences = re.split('\. |;', instruction)
+        for sentence in sentences:
+            words = sentence.split(" ")
+            cooking_verbs.append(words[0])
 
 
-
-    #info items
+    #Info items
     overview_items = soup.find_all("div", class_="recipe-meta-item-header")
     objects = ["" + item.getText() + " " + item.next_sibling.next_sibling.getText() for item in overview_items]
-    recipe_items["overview_items"] = overview_items
 
     title = soup.find("h1", class_="headline").getText()
-    recipe_items["title"] = title
 
-    return recipe_items
+    return Recipe(title, ingredients, instructions_text, cooking_verbs, objects)
 
 
 
 #Content to Look at for Transformations
 #https://www.allrecipes.com/article/common-ingredient-substitutions/
 #https://github.com/rojaswestall/cs337/blob/master/project2/kb.json
-
-#print an ouput of the new recipe
-def print_recipe(recipe_items): 
-    print("\n-------------")
-    print("Recipe: " + recipe_items["title"])
-    print("Ingredients: ")
-    print("") 
-
-    for ingredient in recipe_items["ingredients"]:
-        print_ingredient(ingredient)
-    
-    print("") 
-
-    print("Steps: ")
-    for i, instruction in enumerate(recipe_items["instructions"]): 
-        print(str(i) + ". " + instruction + "")
-
-    print("-------------\n")
