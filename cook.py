@@ -1,19 +1,27 @@
 from parsePage import parse_recipe
 from utils import print_recipe, convert_recipe_type
+from urllib.request import urlparse
 
 #sample recipe to look at
-url_string = "https://www.allrecipes.com/recipe/239230/chef-johns-coq-au-vin/"#"https://www.allrecipes.com/recipe/6698/moms-zucchini-bread/" #"https://www.allrecipes.com/recipe/178630/grandmas-farmhouse-turkey-brine/" 
-recipe = parse_recipe(url_string)
-print("Here is your original recipe! ")
-print_recipe(recipe)
-print("Here is your recipe vegetarian")
-print_recipe(convert_recipe_type(recipe, "vegetarian"))
+print('Please give a recipe link from Allrecipes: ')
+# url_string = "https://www.allrecipes.com/recipe/239230/chef-johns-coq-au-vin/"#"https://www.allrecipes.com/recipe/6698/moms-zucchini-bread/" #"https://www.allrecipes.com/recipe/178630/grandmas-farmhouse-turkey-brine/" 
+url_string = input()
+parsed_uri = urlparse(url_string)
 
-#input("What type of recipe would you like instead? (i.e. american, chinese, healthy): ")
-#TODO: convert the recipe type
+if parsed_uri.netloc != 'www.allrecipes.com':
+    print('Recipe must come from Allrecipes.')
+else:
+  recipe = parse_recipe(url_string)
+  print("Here is your original recipe! ")
+  print_recipe(recipe)
+  print("Here is your recipe vegetarian")
+  print_recipe(convert_recipe_type(recipe, "vegetarian"))
 
-#input("What number of servings would you like? (i.e. original, x): ")
-#TODO: convert the ingredient quantities
+  #input("What type of recipe would you like instead? (i.e. american, chinese, healthy): ")
+  #TODO: convert the recipe type
+
+  #input("What number of servings would you like? (i.e. original, x): ")
+  #TODO: convert the ingredient quantities
 
 
 
