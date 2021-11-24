@@ -1,7 +1,6 @@
 #Use BeautifulSoup4 to Parse an AllRecipes page
 
 import requests
-import nltk
 from bs4 import BeautifulSoup
 import re #regex expressions
 
@@ -69,13 +68,18 @@ def parse_recipe(url) -> Recipe:
     instructions_objects = instructions_section.find_all("p")
     instructions_text = [instruct.getText() for instruct in instructions_objects]
 
+        #Steps?
+            #gathering ingredients
+            #prep (chopping)
+            #cook (fry, sautee)
+            #present (put together, plate)
     
-    #NOTE: NLTK POS tagger did not work well with the type of command sentences 
+    #NOTE: NLTK POS tagger did not work well with these cooking command type of sentences 
 
     #TODO: verb does not start a sentence in this instance -> "An instant-read thermometer inserted into the thickest part of the thigh should read xxx degrees"
     #TODO: HOW do we get the most significant cooking method out of these?
         #tried to see if the cooking action with the longest duration would be relevant but it is a bad indicator
-        #
+        
     #Get the verbs (cooking methods) out of all sentences
     cooking_verbs = []
     for instruction in instructions_text:

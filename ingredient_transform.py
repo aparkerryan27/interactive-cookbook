@@ -139,6 +139,10 @@ Commonly used prefix modifiers are:
 '''
 ]
 
+#TODO: should we build functions like this for all conversions
+def table_to_teaspoon():
+    return 2
+
 #Cooking Relevant Conversions
 '''
 In cooking the old unit Liter (l) is commonly used to measure volume. One liter is (exactly) equal to 0.001 cubic meters, or 1 cubic decimeter, written like: 1 l = 1 dm3. The prefix modifiers can be used with any unit and thus 1 cl (centiliter) is equal to 1/100 of a liter. The unit for volume is derived from the unit for length. Two lengths forms an area, which is length x length and has the derived unit square meter (m2). Three lengths forms the volume metric m3. This has the consequence that a m3 is equal to 1000 dm3, that is 103 = 10x10x10.
@@ -834,6 +838,7 @@ x_to_non_veg = {
   "descriptors": {
     "meat": [
       "boneless",
+      "bone-in"
       "hot",
       "instant",
       "lean",
