@@ -828,3 +828,1712 @@ x_to_non_veg = {
     'carrots':'prawns',
     'carrot':'prawn'
  }
+
+
+{
+  "descriptors": {
+    "meat": [
+      "boneless",
+      "hot",
+      "instant",
+      "lean",
+      "lukewarm",
+      "raw",
+      "refrigerated",
+      "skinless",
+      "tender",
+      "warm"
+    ],
+    "other": [
+      "a la carte",
+      "a la king",
+      "a la mode",
+      "acid",
+      "acidic",
+      "acrid",
+      "airy",
+      "alcoholic",
+      "ambrosial",
+      "aromatic",
+      "au fromage",
+      "au gratin",
+      "au jus",
+      "balsamic",
+      "bite size",
+      "bitter",
+      "blah",
+      "bland",
+      "bold",
+      "bolognese",
+      "brackish",
+      "briny",
+      "brittle",
+      "bubbly",
+      "burning",
+      "bursting",
+      "buttery",
+      "béarnaise",
+      "cacciatore",
+      "cakey",
+      "candied",
+      "carmelized",
+      "caustic",
+      "chalky",
+      "charcuterie",
+      "cheesy",
+      "chewy",
+      "chipotle",
+      "chocolately",
+      "classical",
+      "crispy",
+      "crumbly",
+      "crunchy",
+      "crusty",
+      "crystalized",
+      "curdled",
+      "decadent",
+      "delactable",
+      "dense",
+      "diluted",
+      "distinctive",
+      "doughy",
+      "dredged",
+      "dried out",
+      "dry",
+      "earthy",
+      "fatty",
+      "feathery",
+      "fibrous",
+      "fiery",
+      "filled",
+      "filling",
+      "finger licking good",
+      "fishy",
+      "fizzy",
+      "flakey",
+      "floury",
+      "fluffy",
+      "folded",
+      "fragrant",
+      "fresh",
+      "fried"
+    ],
+    "seafood": [
+      "cooked",
+      "freshly",
+      "frozen"
+    ],
+    "seasoning": [
+      "active",
+      "all purpose",
+      "boiling",
+      "distilled",
+      "dry",
+      "extra firm",
+      "extra virgin",
+      "frying",
+      "ground",
+      "heavy",
+      "hickory flavored",
+      "low sodium",
+      "non dairy",
+      "nonfat",
+      "reduced sodium",
+      "room temperature",
+      "superfine",
+      "sweetened",
+      "unsweetened"
+    ],
+    "style": [
+      "african",
+      "albanian",
+      "algerian",
+      "american",
+      "andorrian",
+      "argentinean",
+      "argentinian",
+      "armenian",
+      "australian",
+      "austrian",
+      "bangladesh",
+      "barbados",
+      "belarus",
+      "belgian",
+      "belize",
+      "bolivian",
+      "brazilian",
+      "british",
+      "bulgarian",
+      "cambodian",
+      "canadian",
+      "chad",
+      "chilean",
+      "chinese",
+      "colombian",
+      "costa rica",
+      "creole",
+      "croatian",
+      "cuban",
+      "dominican",
+      "egyptian",
+      "el salvadorian",
+      "english",
+      "estonian",
+      "ethiopian",
+      "finnish",
+      "florentine",
+      "french",
+      "georgian",
+      "german",
+      "greek",
+      "guatemalan",
+      "hungarian",
+      "indian",
+      "indonesian",
+      "iranian",
+      "irish",
+      "israeli",
+      "italian",
+      "japanese",
+      "kenyan",
+      "korean",
+      "liberian",
+      "libyan",
+      "lithuanian",
+      "malaysian",
+      "mediterranean",
+      "mexican",
+      "mongolian",
+      "moroccan",
+      "nigerian",
+      "norwegian",
+      "peruvian",
+      "phillippino",
+      "polish",
+      "portuguese",
+      "puerto rican",
+      "romanian",
+      "russian",
+      "samoan",
+      "serbian",
+      "sichuan",
+      "singapore",
+      "slovakian",
+      "somalian",
+      "south african",
+      "spanish",
+      "sudanese",
+      "swedish",
+      "swiss",
+      "syrian",
+      "szechuan",
+      "taiwanese",
+      "thai",
+      "tunisian",
+      "turkish",
+      "ukrainian",
+      "venezuelan",
+      "vietnamese"
+    ],
+    "veggie": [
+      "condensed",
+      "fresh",
+      "large",
+      "organic",
+      "packed",
+      "ripe",
+      "very ripe"
+    ]
+  },
+  "healthy_unhealthy_subs": [
+    {
+      "healthy": "almond butter",
+      "unhealthy": "peanut butter"
+    },
+    {
+      "healthy": "almond milk",
+      "unhealthy": "milk"
+    },
+    {
+      "healthy": "almonds",
+      "unhealthy": "croutons"
+    },
+    {
+      "healthy": "arrowroot powder",
+      "unhealthy": "corn starch"
+    },
+    {
+      "healthy": "avacado",
+      "unhealthy": "cheese"
+    },
+    {
+      "healthy": "bacon",
+      "unhealthy": "sausage"
+    },
+    {
+      "healthy": "bagels",
+      "unhealthy": "english muffins"
+    },
+    {
+      "healthy": "beef stock",
+      "unhealthy": "red wine"
+    },
+    {
+      "healthy": "cauliflower",
+      "unhealthy": "sweet potatoes"
+    },
+    {
+      "healthy": "chia seeds",
+      "unhealthy": "breadcrumbs"
+    },
+    {
+      "healthy": "chicken stock",
+      "unhealthy": "white wine"
+    },
+    {
+      "healthy": "cocoa nibs",
+      "unhealthy": "chocolate chips"
+    },
+    {
+      "healthy": "coconut cream",
+      "unhealthy": "heavy cream"
+    },
+    {
+      "healthy": "coconut flour",
+      "unhealthy": "flour"
+    },
+    {
+      "healthy": "coconut oil",
+      "unhealthy": "vegetable oil"
+    },
+    {
+      "healthy": "coconut sugar",
+      "unhealthy": "brown sugar"
+    },
+    {
+      "healthy": "coconut sugar",
+      "unhealthy": "white sugar"
+    },
+    {
+      "healthy": "corn tortilla",
+      "unhealthy": "flour tortilla"
+    },
+    {
+      "healthy": "croissant",
+      "unhealthy": "muffin"
+    },
+    {
+      "healthy": "egg whites",
+      "unhealthy": "eggs"
+    },
+    {
+      "healthy": "fruit-infused water",
+      "unhealthy": "fruit juice"
+    },
+    {
+      "healthy": "goat cheese",
+      "unhealthy": "low-fat cheese"
+    },
+    {
+      "healthy": "greek yogurt",
+      "unhealthy": "sour cream"
+    },
+    {
+      "healthy": "himalayan salt",
+      "unhealthy": "table salt"
+    },
+    {
+      "healthy": "honey",
+      "unhealthy": "corn syrup"
+    },
+    {
+      "healthy": "hummus",
+      "unhealthy": "mayo"
+    },
+    {
+      "healthy": "hummus",
+      "unhealthy": "mayonaise"
+    },
+    {
+      "healthy": "kale chips",
+      "unhealthy": "pretzels"
+    },
+    {
+      "healthy": "lettuce",
+      "unhealthy": "tortillas"
+    },
+    {
+      "healthy": "margarine",
+      "unhealthy": "butter"
+    },
+    {
+      "healthy": "mashed cauliflower",
+      "unhealthy": "mashed potatoes"
+    },
+    {
+      "healthy": "milk",
+      "unhealthy": "creamer"
+    },
+    {
+      "healthy": "mustard",
+      "unhealthy": "mayo"
+    },
+    {
+      "healthy": "mustard",
+      "unhealthy": "mayonaise"
+    },
+    {
+      "healthy": "nuts",
+      "unhealthy": "granola"
+    },
+    {
+      "healthy": "oatmeal",
+      "unhealthy": "cereal"
+    },
+    {
+      "healthy": "olive oil and vinegar",
+      "unhealthy": "ranch dressing"
+    },
+    {
+      "healthy": "palm shortening",
+      "unhealthy": "shortening"
+    },
+    {
+      "healthy": "peanut butter and nutella",
+      "unhealthy": "reeses"
+    },
+    {
+      "healthy": "popcorn",
+      "unhealthy": "potato chips"
+    },
+    {
+      "healthy": "quinoa",
+      "unhealthy": "white rice"
+    },
+    {
+      "healthy": "romaine",
+      "unhealthy": "iceberg"
+    },
+    {
+      "healthy": "smashed avacado",
+      "unhealthy": "jam"
+    },
+    {
+      "healthy": "smashed avacado",
+      "unhealthy": "jelly"
+    },
+    {
+      "healthy": "sprouted toast",
+      "unhealthy": "bagel"
+    },
+    {
+      "healthy": "stevia",
+      "unhealthy": "sugar"
+    },
+    {
+      "healthy": "tea",
+      "unhealthy": "soda"
+    },
+    {
+      "healthy": "tortilla",
+      "unhealthy": "pizza dough"
+    },
+    {
+      "healthy": "unrefined powdered sugar",
+      "unhealthy": "powdered sugar"
+    },
+    {
+      "healthy": "whole grain pasta",
+      "unhealthy": "pasta"
+    },
+    {
+      "healthy": "whole grain spaghetti",
+      "unhealthy": "spaghetti"
+    },
+    {
+      "healthy": "whole wheat bread",
+      "unhealthy": "white bread"
+    },
+    {
+      "healthy": "zucchini",
+      "unhealthy": "noodles"
+    }
+  ],
+  "ingredients": {
+    "protein": {
+      "anchovies": [],
+      "bacon": [],
+      "bass": [],
+      "beef": [
+        "chinese"
+      ],
+      "beef jerky": [],
+      "bison": [],
+      "black cod": [],
+      "blowfish": [
+        "chinese"
+      ],
+      "bluefish": [],
+      "buffalo": [],
+      "catfish": [
+        "chinese"
+      ],
+      "caviar": [
+        "chinese"
+      ],
+      "chicken breast": [
+        "chinese"
+      ],
+      "chicken thigh": [
+        "chinese"
+      ],
+      "cod": [
+        "chinese"
+      ],
+      "crab": [
+        "chinese"
+      ],
+      "crayfish": [],
+      "cuttlefish": [
+        "chinese"
+      ],
+      "duck": [
+        "chinese"
+      ],
+      "eel": [
+        "chinese"
+      ],
+      "escargot": [],
+      "eye of round steak": [],
+      "flounder": [
+        "chinese"
+      ],
+      "haddock": [
+        "chinese"
+      ],
+      "halibut": [
+        "chinese"
+      ],
+      "ham": [],
+      "herring": [
+        "chinese"
+      ],
+      "hot dog": [],
+      "jellyfish": [
+        "chinese"
+      ],
+      "lamb": [
+        "chinese"
+      ],
+      "lamprey": [
+        "chinese"
+      ],
+      "lobster": [
+        "chinese"
+      ],
+      "masago": [],
+      "monkfish": [
+        "chinese"
+      ],
+      "mussels": [
+        "chinese"
+      ],
+      "octopus": [
+        "chinese"
+      ],
+      "oyster": [
+        "chinese"
+      ],
+      "pheasant": [
+        "chinese"
+      ],
+      "pike": [
+        "chinese"
+      ],
+      "pork": [
+        "chinese"
+      ],
+      "pork tenderloin": [
+        "chinese"
+      ],
+      "quail": [
+        "chinese"
+      ],
+      "roast beef": [],
+      "salmon": [
+        "chinese"
+      ],
+      "scallops": [
+        "chinese"
+      ],
+      "sea cucumber": [
+        "chinese"
+      ],
+      "seitan": [
+        "vegetarian"
+      ],
+      "shark": [
+        "chinese"
+      ],
+      "sheep's meat": [
+        "chinese"
+      ],
+      "shrimp": [
+        "chinese"
+      ],
+      "snails": [
+        "chinese"
+      ],
+      "steak": [],
+      "swordfish": [
+        "chinese"
+      ],
+      "tempeh": [
+        "chinese",
+        "vegetarian"
+      ],
+      "tilapia": [],
+      "tofu": [
+        "chinese",
+        "vegetarian"
+      ],
+      "trout": [
+        "chinese"
+      ],
+      "tuna": [
+        "chinese"
+      ],
+      "turkey": [],
+      "turkey breast": [],
+      "veal": [
+        "chinese"
+      ],
+      "venison": []
+    },
+    "sauces": {
+      "a1 sauce": [],
+      "adobo mojado": [],
+      "agliata": [],
+      "agrodolce": [],
+      "aioli": [],
+      "ajika": [],
+      "ajilimójili": [],
+      "ají": [],
+      "ají sauce": [],
+      "albert sauce": [],
+      "alfredo": [],
+      "alfredo sauce": [],
+      "alioli": [],
+      "allemande sauce": [],
+      "amatriciana sauce": [],
+      "anchovy essence": [],
+      "apple sauce": [],
+      "arrabbiata sauce": [],
+      "au jus": [],
+      "avgolemono": [],
+      "avocado sauce": [],
+      "babi panggang sauce": [],
+      "baconnaise": [],
+      "bagna càuda": [],
+      "bagoong": [],
+      "bajan pepper sauce": [],
+      "banana ketchup": [],
+      "barbecue sauce": [],
+      "barese ragù": [],
+      "beurre blanc": [],
+      "beurre manie": [],
+      "beurre monté": [],
+      "beurre noir": [],
+      "beurre noisette": [],
+      "bicky sauce": [],
+      "blueberry sauce": [],
+      "bolognese": [],
+      "bolognese sauce": [],
+      "bordelaise sauce": [],
+      "bow wow sauce": [
+        "chinese"
+      ],
+      "brasil sauce": [],
+      "bread sauce": [],
+      "breton sauce": [],
+      "brown gravy": [],
+      "brown sauce": [],
+      "budu": [],
+      "buffalo sauce": [],
+      "butterscotch sauce": [],
+      "béarnaise sauce": [],
+      "béchamel sauce": [],
+      "café de paris": [],
+      "café de paris sauce": [],
+      "capital sauce": [],
+      "carbonara": [],
+      "caruso sauce": [],
+      "cebolada": [],
+      "chancaca": [],
+      "chancho en piedra": [],
+      "charcutiere sauce": [],
+      "chasseur": [],
+      "chateaubriand sauce": [],
+      "chaudfroid sauce": [],
+      "checca sauce": [],
+      "cheddar sauce": [],
+      "cheez whiz": [],
+      "chermoula": [],
+      "chile pepper-tinged sauces": [
+        "chinese"
+      ],
+      "chili sauce": [
+        "chinese"
+      ],
+      "chilli soy lime": [],
+      "chimichurri": [],
+      "chocolate gravy": [],
+      "chocolate syrup": [],
+      "cincalok": [],
+      "cincinnati chili": [],
+      "cocktail sauce": [
+        "chinese"
+      ],
+      "coffee sauce": [],
+      "colo-colo": [],
+      "comeback sauce": [],
+      "condiments portal": [],
+      "coney sauce": [],
+      "cooked sauces": [],
+      "corn sauce": [],
+      "coulis": [],
+      "cranberry sauce": [],
+      "crème anglaise": [],
+      "cumberland sauce": [],
+      "custard": [],
+      "dabu-dabu": [],
+      "daddies": [],
+      "datil pepper sauce": [],
+      "demi glace": [],
+      "donair sauce": [],
+      "doubanjiang": [
+        "chinese"
+      ],
+      "duck sauce": [
+        "chinese"
+      ],
+      "duckefett": [],
+      "egusi sauce": [],
+      "enchilada sauce": [],
+      "filfel chuma": [],
+      "fish sauce": [
+        "chinese"
+      ],
+      "food portal": [],
+      "fra diavolo sauce": [],
+      "francesinha sauce": [],
+      "frankfurt green sauce": [],
+      "fritessaus": [],
+      "fry sauce": [],
+      "fudge sauce": [],
+      "garlic sauce": [
+        "chinese"
+      ],
+      "garum": [],
+      "gravy": [],
+      "gremolata": [],
+      "guacamole": [],
+      "halford leicestershire table sauce": [],
+      "halvaytar": [],
+      "hard sauce": [],
+      "harissa": [],
+      "henry bain sauce": [],
+      "hogao": [],
+      "hoisin sauce": [],
+      "hollandaise sauce": [],
+      "honey garlic sauce": [
+        "chinese"
+      ],
+      "horseradish sauce": [],
+      "hot sauces": [
+        "chinese"
+      ],
+      "hp sauce": [],
+      "huancaina": [
+        "chinese"
+      ],
+      "japanese pickled plum sauce": [],
+      "joppiesaus": [],
+      "ketchup": [],
+      "khrenovina sauce": [],
+      "korean soy sauce": [],
+      "latik": [],
+      "liver sauce": [],
+      "llajwa": [],
+      "lobster sauce": [
+        "chinese"
+      ],
+      "maafe": [],
+      "maggi": [],
+      "magic shell": [],
+      "mahyawa": [],
+      "mala sauce": [
+        "chinese"
+      ],
+      "mango sauce": [
+        "chinese"
+      ],
+      "marie rose sauce": [],
+      "marinara sauce": [],
+      "melitzanosalata": [],
+      "meuniere sauce": [],
+      "mignonette sauce": [],
+      "mint sauce": [
+        "chinese"
+      ],
+      "mirin": [],
+      "moambe": [],
+      "mojito isleño": [],
+      "mojo": [],
+      "mojo criollo": [],
+      "mojo sauce": [],
+      "mole": [],
+      "mornay sauce": [],
+      "mostaza la pasiva": [],
+      "muhammara": [],
+      "mujde": [],
+      "mujdei": [],
+      "mumbo sauce": [],
+      "mushroom gravy": [],
+      "mushroom ketchup": [
+        "chinese"
+      ],
+      "mushroom sauce": [],
+      "mustard": [],
+      "mustard condiment": [],
+      "mustard sauces": [],
+      "nam chim": [],
+      "nam chim gai": [],
+      "nam chim seafood": [],
+      "nam phrik": [],
+      "nantua sauce": [],
+      "neapolitan ragù": [],
+      "neapolitan sauce": [],
+      "normande sauce": [],
+      "nước chấm": [],
+      "ok sauce": [
+        "chinese"
+      ],
+      "old sour": [],
+      "onion gravy": [],
+      "onion sauce": [],
+      "oxford sauce": [
+        "chinese"
+      ],
+      "oyster sauce": [
+        "chinese"
+      ],
+      "padaek": [],
+      "pan sauce": [
+        "chinese"
+      ],
+      "parsley sauce": [],
+      "peach sauce": [],
+      "peanut sauce": [
+        "chinese"
+      ],
+      "pebre": [],
+      "pecel": [],
+      "pepper sauces": [
+        "chinese"
+      ],
+      "peppercorn sauce": [
+        "chinese"
+      ],
+      "persillade": [],
+      "pesto": [],
+      "picadillo": [],
+      "picantina": [],
+      "pickapeppa sauce": [],
+      "pico de gallo": [],
+      "pique": [],
+      "pique sauce": [],
+      "pique verde": [],
+      "pla ra": [],
+      "plum sauce": [
+        "chinese"
+      ],
+      "ponzu": [],
+      "poutine sauce": [],
+      "prego": [],
+      "prik nam pra": [],
+      "ragù": [],
+      "ragù alla salsiccia": [],
+      "rainbow sauce": [],
+      "ravigote": [],
+      "ravigote sauce": [],
+      "recaíto": [],
+      "red-eye gravy": [],
+      "redcurrant sauce": [],
+      "remoulade": [],
+      "romesco": [],
+      "romesco sauce": [],
+      "rouennaise sauce": [],
+      "rouille": [],
+      "sahawiq": [],
+      "salad cream": [],
+      "salad dressing": [],
+      "salsa": [],
+      "salsa criolla": [],
+      "salsa golf": [],
+      "salsa lizano": [],
+      "salsa verde": [],
+      "salvitxada": [],
+      "sambal": [],
+      "satay sauce": [],
+      "satsivi": [],
+      "satzibeli": [],
+      "sauce africaine": [],
+      "sauce allemande": [],
+      "sauce américaine": [],
+      "sauce andalouse": [],
+      "sauce au poivre": [],
+      "sauce aurore": [],
+      "sauce bercy": [],
+      "sauce bourguignonne": [],
+      "sauce béchamel": [],
+      "sauce charcutière": [],
+      "sauce espagnole": [],
+      "sauce gribiche": [],
+      "sauce hollandaise": [],
+      "sauce lyonnaise": [],
+      "sauce poivrade": [],
+      "sauce poulette": [],
+      "sauce robert": [],
+      "sauce tomate": [],
+      "sauce velouté": [],
+      "sauce vierge": [],
+      "sauce vin blanc": [],
+      "saus cabai": [],
+      "sausage gravy": [
+        "chinese"
+      ],
+      "savore sanguino": [],
+      "see  green sauce": [],
+      "shacha sauce": [],
+      "shito": [],
+      "shottsuru": [],
+      "shrewsbury sauce": [],
+      "siu haau sauce": [],
+      "skordalia": [],
+      "sloppy joe": [],
+      "sofrito": [],
+      "soubise sauce": [],
+      "sour cream sauce": [],
+      "soy sauce": [
+        "chinese"
+      ],
+      "sriracha sauce": [],
+      "ssamjang": [],
+      "steak sauce": [
+        "chinese"
+      ],
+      "strawberry sauce": [
+        "chinese"
+      ],
+      "sugo all'amatriciana": [],
+      "sugo alla puttanesca": [],
+      "suprême sauce": [],
+      "sweet and sour sauce": [
+        "chinese"
+      ],
+      "sweet bean sauce": [
+        "chinese"
+      ],
+      "sweet chili sauce": [
+        "chinese"
+      ],
+      "sweet soy sauce": [
+        "chinese"
+      ],
+      "syrup": [],
+      "tabasco sauce": [
+        "chinese"
+      ],
+      "taramasalata": [],
+      "tare sauce": [],
+      "tartar sauce": [],
+      "tentsuyu": [],
+      "teriyaki": [],
+      "tewkesbury mustard": [],
+      "tianmianjiang": [],
+      "tkemali": [],
+      "tomato sauce": [
+        "chinese"
+      ],
+      "tonkatsu sauce": [],
+      "toum": [],
+      "tuco": [],
+      "tucupi": [],
+      "tzatziki": [],
+      "tương": [],
+      "umeboshi paste": [],
+      "velouté sauce": [],
+      "venetian sauce": [],
+      "vinagrete": [],
+      "vinaigrette": [],
+      "vincotto": [],
+      "vizcaína": [],
+      "vodka sauce": [],
+      "whisky sauce": [],
+      "white sauce": [],
+      "wine sauce": [],
+      "worcestershire sauce": [],
+      "wow-wow sauce": [],
+      "xató": [],
+      "xo sauce": [
+        "chinese"
+      ],
+      "yogurt sauce": [
+        "chinese"
+      ],
+      "zabaione": [],
+      "zigeuner sauce": []
+    },
+    "spices": {
+      "adobo": [],
+      "allspice": [],
+      "anise extract": ["chinese"],
+      "anise seed": ["chinese"],
+      "basil": ["chinese"],
+      "bay leaf": [
+        "chinese"
+      ],
+      "black pepper": ["chinese"],
+      "black peppercorns": ["chinese"],
+      "black salt": [],
+      "black truffle salt": [],
+      "brown sugar": ["chinese"],
+      "cajun seasoning": [],
+      "calabrian chili peppers": [],
+      "cane sugar": [],
+      "caraway seeds": [],
+      "caraway, ground": [],
+      "cardamom": [
+        "chinese"
+      ],
+      "cardamom seeds": [],
+      "cayenne pepper": [],
+      "chili": ["chinese"],
+      "chive": [],
+      "cilantro": ["chinese"],
+      "cloves": [
+        "chinese"
+      ],
+      "cocoa nibs": [],
+      "coriander": ["chinese"],
+      "cumin": [],
+      "cumin seeds": [],
+      "dill": [],
+      "dill seed": [],
+      "dried chili": [
+        "chinese"
+      ],
+      "fennel": [
+        "chinese"
+      ],
+      "fennel seeds": ["chinese"],
+      "garam masala": [],
+      "garlic": [
+        "chinese"
+      ],
+      "garlic powder": [
+        "chinese"
+      ],
+      "ghost chili pepper": [],
+      "ghost pepper": [],
+      "ginger": [
+        "chinese"
+      ],
+      "ginger root": [
+        "chinese"
+      ],
+      "grapefruit": [],
+      "green mango": [],
+      "green peppercorns": ["chinese"],
+      "green serrano chile": [],
+      "guajillo chile": [],
+      "guajillo chiles": [],
+      "habanero": [],
+      "habanero pepper": [],
+      "honey": ["chinese"],
+      "horseradish": [],
+      "hot chili": ["chinese"],
+      "italian herb seasoning": [],
+      "jamaican jerk seasoning": [],
+      "juniper berries": ["chinese"],
+      "lemon juice": [],
+      "lemon peel": [],
+      "lemon pepper": [],
+      "lemongrass": ["chinese"],
+      "lime juice": [],
+      "lime peel": [],
+      "maple sugar": [],
+      "molasses": [],
+      "mustard": [],
+      "mustard seeds": [],
+      "nutmeg": ["chinese"],
+      "orange peel": ["chinese"],
+      "oregano": ["chinese"],
+      "paprika": ["chinese"],
+      "parsley": [],
+      "parsley flakes": [],
+      "peppermint": ["chinese"],
+      "rosemary": ["chinese"],
+      "saffron": ["chinese"],
+      "sage": [],
+      "salt": ["chinese"],
+      "sassafras": [],
+      "sea salt": ["chinese"],
+      "sesame seeds": ["chinese"],
+      "shallots": ["chinese"],
+      "star anise": [
+        "chinese"
+      ],
+      "szechuan peppercorns": [
+        "chinese"
+      ],
+      "tamarind": ["chinese"],
+      "tandoori": [],
+      "tarragon": ["chinese"],
+      "thyme": ["chinese"],
+      "turmeric": ["chinese"],
+      "vanilla extract": ["chinese"],
+      "white pepper": [
+        "chinese"
+      ]
+    },
+    "vegetables": {
+      "amaranth": [
+        "chinese"
+      ],
+      "amaranth leaves": [
+        "chinese"
+      ],
+      "arrowroot": [],
+      "artichoke": [],
+      "arugula": [],
+      "asparagus": [
+        "chinese"
+      ],
+      "bamboo shoots": [
+        "chinese"
+      ],
+      "beets": [
+        "chinese"
+      ],
+      "belgian endive": [],
+      "bitter melon": [],
+      "bok choy": [
+        "chinese"
+      ],
+      "broccoli": [
+        "chinese"
+      ],
+      "broccoli rabe": [],
+      "brussel sprouts": [],
+      "butternut squash": [],
+      "carrot": [
+        "chinese"
+      ],
+      "cassava": [],
+      "cauliflower": [
+        "chinese"
+      ],
+      "celeriac": [],
+      "celery": [
+        "chinese"
+      ],
+      "celery root": [],
+      "chayote": [],
+      "chicory": [],
+      "collards": [],
+      "corn": [],
+      "crookneck": [],
+      "cucumber": [],
+      "curly endive": [],
+      "daikon": [],
+      "dandelion greens": [],
+      "edamame": [
+        "chinese"
+      ],
+      "eggplant": [
+        "chinese"
+      ],
+      "fava beans": [],
+      "fennel": [],
+      "fiddleheads": [],
+      "green beans": [
+        "chinese"
+      ],
+      "green cabbage": [
+        "chinese"
+      ],
+      "green onion": [
+        "chinese"
+      ],
+      "green peas": [],
+      "green pepper": [
+        "chinese"
+      ],
+      "horseradish": ["chinese"],
+      "iceberg lettuce": [],
+      "jicama": [],
+      "kale": [],
+      "kohlrabi": [],
+      "leaf lettuce": [],
+      "leeks": [],
+      "mushrooms": [
+        "chinese"
+      ],
+      "mustard greens": [
+        "chinese"
+      ],
+      "napa cabbage": [
+        "chinese"
+      ],
+      "okra": [
+        "chinese"
+      ],
+      "onions": [
+        "chinese"
+      ],
+      "oysterplant": [],
+      "parsnip": [],
+      "pea leaves": [
+        "chinese"
+      ],
+      "pea shoots": [
+        "chinese"
+      ],
+      "peas": [
+        "chinese"
+      ],
+      "pumpkin": [],
+      "radicchio": [],
+      "radishes": [],
+      "red cabbage": [
+        "chinese"
+      ],
+      "red onion": [],
+      "red pepper": [
+        "chinese"
+      ],
+      "red potato": [
+        "chinese"
+      ],
+      "romaine lettuce": [],
+      "rutabaga": [],
+      "salsify": [],
+      "shallots": [],
+      "shepherds purse": [
+        "chinese"
+      ],
+      "snow peas": [
+        "chinese"
+      ],
+      "sorrel": [],
+      "soybeans": [
+        "chinese"
+      ],
+      "spaghetti squash": [],
+      "spinach": [
+        "chinese"
+      ],
+      "sugar snap peas": [],
+      "sweet potato": [
+        "chinese"
+      ],
+      "sweet red pepper": [],
+      "swiss chard": [],
+      "tomatillo": [],
+      "tomato": [
+        "chinese"
+      ],
+      "turnip": [],
+      "water spinach": [
+        "chinese"
+      ],
+      "watercress": [
+        "chinese"
+      ],
+      "white potato": [
+        "chinese"
+      ],
+      "yam root": [],
+      "yellow onion": [
+        "chinese"
+      ],
+      "yellow potato": [
+        "chinese"
+      ],
+      "yuca root": [],
+      "zucchini": []
+    }
+  },
+  "measurements": {
+    "liquids": [
+      "Tbsp",
+      "Tbsps",
+      "bottle",
+      "bottles",
+      "c",
+      "cs",
+      "cup",
+      "cups",
+      "dessertspoon",
+      "dessertspoons",
+      "fl oz",
+      "fl ozs",
+      "fluid ounce",
+      "fluid ounces",
+      "fluid oz",
+      "fluid ozs",
+      "gal",
+      "gallon",
+      "gallons",
+      "gals",
+      "jar",
+      "jars",
+      "liter",
+      "liters",
+      "milliliter",
+      "milliliters",
+      "ml",
+      "mls",
+      "pint",
+      "pints",
+      "pt",
+      "pts",
+      "qt",
+      "qts",
+      "quart",
+      "quarts",
+      "tablespoon",
+      "tablespoons",
+      "teaspoon",
+      "teaspoons",
+      "tsp",
+      "tsps"
+    ],
+    "solids": [
+      "#",
+      "#s",
+      "bag",
+      "bags",
+      "bunch",
+      "bunches",
+      "can",
+      "cans",
+      "clove",
+      "cloves",
+      "cube",
+      "cubes",
+      "dash",
+      "dashes",
+      "envelope",
+      "envelopes",
+      "gram",
+      "grams",
+      "head",
+      "heads",
+      "inch",
+      "inches",
+      "kilogram",
+      "kilograms",
+      "lb",
+      "lbs",
+      "ounce",
+      "ounces",
+      "oz",
+      "ozs",
+      "package",
+      "packages",
+      "packet",
+      "packets",
+      "piece",
+      "pieces",
+      "pinch",
+      "pinches",
+      "pound",
+      "pounds",
+      "sheet",
+      "sheets",
+      "slice",
+      "slices",
+      "strip",
+      "strips"
+    ]
+  },
+  "methods": {
+    "primary": [
+      "bake",
+      "boil",
+      "broil",
+      "fry",
+      "pressure cook",
+      "grill",
+      "mix",
+      "simmer",
+      "blend",
+      "steam"
+    ],
+    "secondary": [
+      "bake",
+      "beat",
+      "boil",
+      "brown",
+      "brush",
+      "cover",
+      "cool",
+      "combine",
+      "cream",
+      "cut",
+      "dip",
+      "drain",
+      "chill",
+      "crumble",
+      "flour",
+      "flip",
+      "fold",
+      "grease",
+      "heat",
+      "line",
+      "mash",
+      "measure",
+      "mix",
+      "melt",
+      "pour",
+      "garnish",
+      "preheat",
+      "pound",
+      "layer",
+      "stuff",
+      "refrigerate",
+      "rinse",
+      "saute",
+      "serve",
+      "season",
+      "shake",
+      "simmer",
+      "sift",
+      "slice",
+      "soak",
+      "spoon",
+      "spread",
+      "sprinkle",
+      "stir",
+      "strain",
+      "toast",
+      "toss",
+      "turn",
+      "whisk"
+    ]
+  },
+  "preparation": {
+    "hard_prep": [
+      "casings removed",
+      "coarsely chopped",
+      "dry roasted",
+      "finely chopped",
+      "finely diced",
+      "freeze dried",
+      "matchstick cut",
+      "roughly chopped",
+      "separated florets",
+      "thinly sliced"
+    ],
+    "prep": [
+      "al dente",
+      "battered",
+      "beaten",
+      "blackened",
+      "blanched",
+      "blended",
+      "boiled",
+      "boned",
+      "braised",
+      "brewed",
+      "broiled",
+      "browned",
+      "caked",
+      "canned",
+      "charred",
+      "chilled",
+      "chopped",
+      "cored",
+      "creamed",
+      "crumbled",
+      "crushed",
+      "cubed",
+      "cured",
+      "curried",
+      "cut",
+      "deglazed",
+      "dehydrated",
+      "devein",
+      "deviled",
+      "diced",
+      "divided",
+      "drained",
+      "dried",
+      "escalloped",
+      "evaporated",
+      "fermented",
+      "flambé",
+      "fricassed",
+      "grated",
+      "halved",
+      "julienned",
+      "mashed",
+      "melted",
+      "minced",
+      "peeled",
+      "pitted",
+      "removed",
+      "reserved",
+      "rinsed",
+      "roasted",
+      "rubbed",
+      "seasoned",
+      "seeded",
+      "separated",
+      "shredded",
+      "sliced",
+      "soaked",
+      "softened",
+      "stemmed",
+      "thawed",
+      "thawed",
+      "torn",
+      "unsalted"
+    ]
+  },
+  "scalable": [
+    "brown sugar",
+    "butter",
+    "lard",
+    "salt",
+    "soy sauce",
+    "sugar",
+    "white sugar"
+  ],
+  "tools": [
+    "apple corer",
+    "apple cutter",
+    "bag",
+    "baking sheet",
+    "balloon whisk",
+    "basket skimmer",
+    "baster",
+    "basting brush",
+    "beanpot",
+    "bell whisk",
+    "bench knife",
+    "bench scraper",
+    "biscuit mould",
+    "blender",
+    "blow torch",
+    "blowlamp",
+    "blowtorch",
+    "boil oven preventer",
+    "bottle opener",
+    "bowl",
+    "bread knife",
+    "browning bowl",
+    "browning plate",
+    "browning tray",
+    "bulb baster",
+    "burger spatula",
+    "burr grinder",
+    "burr mill",
+    "buscuit cutter",
+    "buscuit press",
+    "butcher's twine",
+    "butter curler",
+    "cake server",
+    "cake shovel",
+    "can opener",
+    "candy thermometer",
+    "carving knife",
+    "cheese cutter",
+    "cheese grater",
+    "cheese knife",
+    "cheese knives",
+    "cheese slicer",
+    "cheese spreader",
+    "cheesecloth",
+    "chef knife",
+    "chef's knife",
+    "chefs knife",
+    "cherry pitter",
+    "chinois",
+    "chinoise",
+    "citrus reamer",
+    "clay pot",
+    "cleaver",
+    "colander",
+    "cookie cutter",
+    "cookie mould",
+    "cookie press",
+    "cooking twine",
+    "corkscrew",
+    "crab cracker",
+    "cup",
+    "cutting board",
+    "deep spoon",
+    "dish",
+    "dough scraper",
+    "drum sieve",
+    "edible tableware",
+    "egg piercer",
+    "egg poacher",
+    "egg separator",
+    "egg slicer",
+    "egg timer",
+    "fat separator",
+    "fillet knife",
+    "fish scaler",
+    "fish slice",
+    "fish spatula",
+    "flat coil whisk",
+    "flat whisk",
+    "flour sifter",
+    "food mill",
+    "food storage container",
+    "french whisk",
+    "frying pan",
+    "funnel",
+    "garlic press",
+    "grapefruit knife",
+    "grater",
+    "gravy separator",
+    "gravy strainer",
+    "gravy whisk",
+    "griddle",
+    "herb chopper",
+    "honey dipper",
+    "ice cream scoop",
+    "kitchen mallet",
+    "kitchen scale",
+    "kitchen scissor",
+    "kitchen scraper",
+    "kitchen string",
+    "kitchen tool crock",
+    "kitchen twine",
+    "knife",
+    "ladle",
+    "lame",
+    "lemon reamer",
+    "lemon squeezer",
+    "lobster fork",
+    "lobster pick",
+    "mandoline",
+    "mashers",
+    "mated colander pot",
+    "measuring cup",
+    "measuring jar",
+    "measuring jug",
+    "measuring spoon",
+    "meat grinder",
+    "meat tenderiser",
+    "meat tenderizer",
+    "meat thermometer",
+    "melon ball",
+    "melon baller",
+    "metal tong",
+    "mezzaluna",
+    "microplane",
+    "milk frother",
+    "milk guard",
+    "milk watcher",
+    "mincer",
+    "mini whisk",
+    "mixing bowl",
+    "mixing whisk",
+    "molcajete",
+    "mortar",
+    "nutcracker",
+    "nutmeg grater",
+    "olive stoner",
+    "oven glove",
+    "oven mitt",
+    "oven",
+    "pan",
+    "panini spatula",
+    "pasta fork",
+    "pastry bag",
+    "pastry blender",
+    "pastry brush",
+    "pastry wheel",
+    "peeler",
+    "pepper grinder",
+    "pepper mill",
+    "pestle",
+    "pie bird",
+    "pie cutter",
+    "pie funnel",
+    "pie server",
+    "pie vent",
+    "pizza cutter",
+    "pizza shovel",
+    "pizza slicer",
+    "pot holder",
+    "pot minder",
+    "pot",
+    "pot-holder",
+    "potato masher",
+    "potato ricer",
+    "potholder",
+    "poultry shears",
+    "ricer",
+    "roast lifter",
+    "roller docker",
+    "rolling pin",
+    "salt shaker",
+    "santoku knife",
+    "saucepan",
+    "scale",
+    "scissor",
+    "scoop",
+    "scraper",
+    "serrated bread knife",
+    "serving platter",
+    "shredder",
+    "sieve",
+    "sifter",
+    "silicone tong",
+    "skillet",
+    "slotted spoon",
+    "spatula",
+    "spider strainer",
+    "spider",
+    "spoon sieve",
+    "spoon skimmer",
+    "steak knife",
+    "stove",
+    "strainer",
+    "sugar thermometer",
+    "tablespoon",
+    "tamis",
+    "teaspoon",
+    "tin opener",
+    "tomato knife",
+    "tong",
+    "trussing needle",
+    "turner",
+    "twine",
+    "urokotori",
+    "utility knife",
+    "vegetable peeler",
+    "weighing scales",
+    "whisk",
+    "wooden spoon",
+    "zester"
+  ]
+}

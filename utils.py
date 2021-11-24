@@ -15,15 +15,24 @@ class Recipe:
 
 def convert_recipe_type(recipe, to_conversion) -> Recipe:
     new_recipe = copy.deepcopy(recipe)
+
+    #To Veggie Conversion
     if to_conversion == "vegetarian":
         for ingredient in new_recipe.ingredients:
             if ingredient.name in vegetarian:
                 ingredient.setName(vegetarian[ingredient.name])
-            else:
-                print("ERROR: no " + to_conversion + " conversion found for: ", end="")
+            else: 
+                #TODO: remove print statement
+                #either the food is already veggie or cannot be found. check while testing
+                print("no " + to_conversion + " conversion found for: ", end="")
                 print(ingredient.name)
 
     return new_recipe
+
+
+#TODO: For our optional conversion, I think we should do common missing ingredient substitutions
+#https://www.allrecipes.com/article/common-ingredient-substitutions/
+
 
 def scale_recipe(recipe, scale) -> Recipe:
     new_recipe = copy.deepcopy(recipe)

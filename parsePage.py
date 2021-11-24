@@ -92,9 +92,3 @@ def parse_recipe(url) -> Recipe:
     title = soup.find("h1", class_="headline").getText()
 
     return Recipe(title, ingredients, instructions_text, cooking_verbs, objects)
-
-
-
-#Content to Look at for Transformations
-#https://www.allrecipes.com/article/common-ingredient-substitutions/
-#https://github.com/rojaswestall/cs337/blob/master/project2/kb.json
